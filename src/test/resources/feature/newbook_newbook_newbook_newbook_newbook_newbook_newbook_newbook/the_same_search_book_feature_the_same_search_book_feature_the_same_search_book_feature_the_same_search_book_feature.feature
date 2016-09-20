@@ -11,7 +11,7 @@ And today is 2015-11-18
 Scenario: scenario
 dd
 Given dddd
-And new change is addednnnn
+And new change is added
 
 @SC_247848187
 Scenario: QQQQQQQQQQQQQQQQQQQQQQQqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
