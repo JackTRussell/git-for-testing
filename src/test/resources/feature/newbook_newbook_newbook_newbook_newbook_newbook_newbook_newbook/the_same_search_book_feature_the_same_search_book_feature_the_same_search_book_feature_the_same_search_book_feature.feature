@@ -1,4 +1,4 @@
-@ST_4382 @Story_BookSearch
+@ST_4385 @Story_BookSearch
 Feature: the_same_search_book_feature_the_same_search_book_feature_the_same_search_book_feature_the_same_search_book_feature
   To allow a customer to find his favourite books quickly, the library must offer multiple ways to search for a book.
 
@@ -7,18 +7,18 @@ Background:
 Given a $100 microwave was sold on 2015-11-03
 And today is 2015-11-18
 
-@SC_18686 @d
+@SC_18695 @d
 Scenario: scenario
 dd
 Given dddd
 And new change is added
 
-@SC_18687
+@SC_18696
 Scenario: QQQQQQQQQQQQQQQQQQQQQQQqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
 Given scenario with long name
 And name has to be trunkated156515555ftghfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffw677777777777777777777777777777777777777777
 
-@SC_18688 @Critical @Test_1
+@SC_18697 @Critical @Test_1
 Scenario: Search books by publication year
 Given a book with the title 'One good book', written by 'Anonymous', published in 14 March 2013
 And another book with the title 'Some other book', written by 'Tim Tomson', published in 23 August 2014
