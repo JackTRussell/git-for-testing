@@ -66,3 +66,36 @@ Examples:
 |user|
 |DO|
 |PM|
+
+@SC_58563
+Scenario Outline: Direct mode for VCS
+Given I’m logged in as <user>
+And I selected Direct mode
+And I’m on page Editor
+But I can't see tab 'Feature Management' on left panel
+When I added new folder
+Then I see it in GIT
+When I renamed folder
+And I clicked on confirmation button
+Then I see changes in GIT
+When I added new feature in the folder
+Then I see it in GIT
+When I renamed feature
+And I clicked on confirmation button
+Then I see changes in GIT
+When I changed tags in feature
+And I clicked on confirmation button
+Then I see changes in GIT
+When I changed feature description
+And I clicked on confirmation button
+Then I see changes in GIT
+When I moved created feature from folder
+Then I see changes in GIT
+When I deleted feature
+Then I see it was deleted from GIT
+
+Examples: 
+|user|
+|DO|
+|PM|
+|TM|
