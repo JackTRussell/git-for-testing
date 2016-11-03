@@ -8,3 +8,11 @@ Some description
 Given I created scenario
 Then I see it in Relime
 And the salary management system is initialized with the following data
+
+@SC_58558 @thirdscenariotag
+Scenario: First scenario
+Some description
+Given I created scenario qwerety
+Then I see it in Relime
+And hover Direct mode
+#changed
