@@ -171,3 +171,19 @@ Examples:
 |user|
 |DO|
 |PM|
+
+@SC_58567
+Scenario: Requiring Confirmation save mode for TM user
+Given I'm logged in as TM
+And I see Requiring Confirmation mode is selected
+And I'm on Editor page
+When I changed feature
+And I clicked on confirmation button
+Then I don't see updates in GIT
+And I don't see updates in Jira
+And I see tab Feature Management is unavailable
+When I changed scenario
+And I clicked on button 'Save'
+Then I don't see updates in GIT
+And I don't see updates in Jira
+And I see tab Feature Management is unavailable
