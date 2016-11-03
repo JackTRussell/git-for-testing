@@ -152,3 +152,22 @@ Examples:
 |user|
 |DO|
 |PM|
+
+@SC_58566
+Scenario Outline: Requiring Confirmation mode
+Given I'm logged in as <user>
+And I selected Requiring Confirmation mode
+And I'm on page Editor
+When I performed changes is Relime
+Then I can't find changes in GIT
+And I can't find changes in Jira
+When I navigate to page Feature Management
+And I click on button 'Export data from Relime to GIT'
+Then I see changes in GIT
+When I click on button 'Export data from Relime to Jira'
+Then I see changes in
+
+Examples: 
+|user|
+|DO|
+|PM|
