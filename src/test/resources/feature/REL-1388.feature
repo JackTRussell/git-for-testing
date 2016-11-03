@@ -38,3 +38,16 @@ Examples:
 |DO|
 |PM|
 |TM|
+
+@SC_58561
+Scenario Outline: Control to choose saving mode
+Given I'm logged in as <user>
+And I'm on page Project Settings
+When I click on Saving mode control
+Then I see <action>
+
+Examples: 
+|user|action|
+|DO|dropdown is expanded|
+|PM|dropdown is expanded|
+|TM|control is unclickable|
