@@ -51,3 +51,18 @@ Examples:
 |DO|dropdown is expanded|
 |PM|dropdown is expanded|
 |TM|control is unclickable|
+
+@SC_58562
+Scenario Outline: Saving mode tooltips
+Given I’m logged as <user>
+And I’m on page Project Settings
+When I expanded Saving mode dropdown
+And hover Direct mode
+Then I see tooltip "Feature and scenario changes are sent to VCS and TTS at once"
+When I hover Requiring Confirmation mode
+Then I see tooltip "Feature and scenario changes made by user would be saved to Relime DB only. The changes should be approved and sent to VCS and TTS by PM only"
+
+Examples: 
+|user|
+|DO|
+|PM|
